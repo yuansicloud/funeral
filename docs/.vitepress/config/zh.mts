@@ -56,7 +56,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       items: [
         {
           link: 'introduction/vben',
-          text: '关于 Vben Admin',
+          text: '关于元思·殡',
         },
         {
           link: 'introduction/why',
@@ -74,9 +74,9 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
     {
       text: '基础',
       items: [
-        { link: 'essentials/concept', text: '基础概念' },
-        { link: 'essentials/development', text: '本地开发' },
-        { link: 'essentials/route', text: '路由和菜单' },
+        { link: 'essentials/concept', text: '登录' },
+        { link: 'essentials/development', text: '个人中心' },
+        { link: 'essentials/route', text: '通知' },
         { link: 'essentials/settings', text: '配置' },
         { link: 'essentials/icons', text: '图标' },
         { link: 'essentials/styles', text: '样式' },
@@ -86,9 +86,15 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       ],
     },
     {
-      text: '深入',
+      text: '陵园管理',
       items: [
-        { link: 'in-depth/login', text: '登录' },
+        {
+          text: '福位管理',
+          items: [
+            { link: 'cemetery/1', text: '福位管理' },
+            { link: 'cemetery/2', text: '福位详情' },
+          ],
+        },
         // { link: 'in-depth/layout', text: '布局' },
         { link: 'in-depth/theme', text: '主题' },
         { link: 'in-depth/access', text: '权限' },
